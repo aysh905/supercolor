@@ -247,6 +247,23 @@
     border-radius: 7px;
     margin-top: 20px;
 }
+.signup {
+    background-color: #DF3682;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-width: 200px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.signup:hover {
+    background-color: #DF3682; 
+	color:#fff;
+}
 #about .login {
     margin-bottom: 0;
 }
@@ -570,6 +587,78 @@ p.nomargin {
 .mobile {
     display: none;
 }
+.align-right{
+	text-align:right;
+}
+.align-center{
+	text-align:center;
+}
+.padding-zero{
+	padding:0;
+}
+#footer-social {
+  background: hsl(200, 6%, 19%) none repeat scroll 0 0;
+  padding: 13px 0;
+}
+#footer-social ul{
+  margin-bottom: 0px;
+}
+#footer-social ul > li img {
+  width: 30px;
+}
+#footer-social ul > li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.social-li li {
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 80%);
+  font-size: 16px;
+  list-style: outside none none;
+  padding: 7px 15px;
+}
+.social-li a {
+  color: hsl(0, 0%, 80%);
+}
+.footer-content .fa-angle-right {
+  float: right;
+}
+.footer-icons-texts {
+  font-size: 12px;
+}
+.footer-icons-texts span {
+  color:hsl(0, 0%, 80%);
+}
+.icon-tab-footer {
+  margin-bottom: 15px;
+}
+.login-signup-text {
+  color: hsl(0, 0%, 0%);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.remember-me {
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: bold !important;
+}
+.login-section {
+  margin-bottom: 100px;
+}
+.underline {
+  text-decoration: underline;
+}
+.checkboxFive {
+	width: 25px;
+	margin: 20px 100px;
+	position: relative;
+}
+.form-control {
+  border: 1px solid hsl(21, 6%, 49%);
+  border-radius: 0;
+}
 
 @media screen and (max-width: 767px) {
     .mobile {
@@ -636,4 +725,12 @@ p.nomargin {
         max-width: 60px;
         margin-bottom: 80px;
     }
+	.first-footer-col img {
+		margin: 0px !important;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+	.tab-to-desktop{
+	    display:none;
+	}
 }
