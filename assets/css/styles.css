@@ -471,6 +471,7 @@
 #gallery .slick-active {
     width: 210.45px !important;
     margin-left: 10px;
+	margin-left: 12px;
 }
 #gallery .slick-current {
     width: 283.65px !important;
