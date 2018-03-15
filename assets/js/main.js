@@ -23,4 +23,7 @@ $(function(){
     $('.dropdown, .dropdown-img').on("click", function(){
         $(this).children(".dropdown-menu").toggleClass("show");
     });
+	$('.next-button').on("click", function(){
+        $("#"+$(this).attr("data-target-id")).trigger("click");
+    });
 });
