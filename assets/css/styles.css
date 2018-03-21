@@ -796,7 +796,7 @@ h2 {
 /* Sign-up Page Styling ends here */
 /* css updates */
 .not-mobile.my-acc-cart {
-  font-size: 13px;
+  font-size: 11px;
 }
 @media screen and (max-width: 768px) {
 .dropdown-img {
