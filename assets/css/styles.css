@@ -28,6 +28,7 @@
 }
 #logo-bar #logo img {
     max-width: 250px; 
+	width:100%;
 }
 #logo-bar .search-bar {
     text-align: center;
@@ -774,9 +775,6 @@ h2 {
 .nav.nav-tabs {
   margin-top: 27px;
 }
-.top-steps-tab {
-  width: 360px;
-}
 .col-form-label, .form-check-inline {
   font-weight: bold;
   font-size: 14px;
@@ -794,8 +792,35 @@ h2 {
 	#myTab .nav-link {
 	  font-size: 14px;
 	}
-	.top-steps-tab {
-	  width: 300px;
-	}
 }
 /* Sign-up Page Styling ends here */
+/* css updates */
+.not-mobile.my-acc-cart {
+  font-size: 13px;
+}
+@media screen and (max-width: 768px) {
+.dropdown-img {
+  margin-right: 20px;
+}
+}
+@media screen and (max-width: 991px) {
+#logo-bar .search-bar {
+  margin: 18px auto;
+}
+}
+#myTab {
+  display: list-item !important;
+  text-align: center !important;
+}
+#myTab .nav-item {
+  display: inline-block;
+}
+@media screen and (max-width: 450px) {
+	#myTab .nav-link {
+	  font-size: 14px;
+	}
+	#myTab .nav-link {
+  font-size: 13px;
+  padding: 5px;
+}
+}
