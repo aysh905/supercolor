@@ -26,4 +26,53 @@ $(function(){
 	$('.next-button').on("click", function(){
         $("#"+$(this).attr("data-target-id")).trigger("click");
     });
+
+    // Dropdown functions
+    var subMenu, subMenuContent;
+    $("body").on("mouseenter", ".nav-dropdown  ul.main-menu li", function(){
+        var element = $(this);
+        var imageSrc= element.attr("data-image");
+        var imageContainer= element.parents(".nav-dropdown").find(".dropdown-image-container");
+        $(".nav-dropdown ul.main-menu li").removeClass("active");
+        element.addClass("active");
+        subMenu = element.parents(".nav-dropdown").children(".sub-dropdown");
+        subMenuContent = element.children(".nav-sub-dropdown").length ? element.children(".nav-sub-dropdown").html() : false;
+        imageContainer.show();
+        if(subMenuContent) {
+            // subMenuContent.appendTo(subMenu);
+            // subMenu.append(subMenuContent);
+            subMenu.html(subMenuContent);
+            subMenu.show();
+        } else {
+            subMenu.hide();
+        }
+        imageContainer.children("img").attr("src", imageSrc);
+    });
+    $("body").on("mouseleave", ".nav-dropdown  ul.main-menu li", function(){
+        var element = $(this);
+        var imageSrc= element.attr("data-image");
+        var imageContainer= element.parents(".nav-dropdown").find(".dropdown-image-container");
+        var subMenu = element.parents(".nav-dropdown").children(".sub-dropdown");
+        //imageContainer.hide();
+        //subMenu.empty();
+        subMenuContent = false;
+        //subMenu.hide();
+        //imageContainer.children("img").attr("src", "");
+    });
+
+    $("body").on("mouseenter", ".nav-dropdown ul.sub-menu li", function(){
+        var element = $(this);
+        var imageSrc= element.attr("data-image");
+        var imageContainer= element.parents(".nav-dropdown").find(".sub-dropdown-image-container");
+        $(".nav-dropdown ul.sub-menu li").removeClass("active");
+        element.addClass("active");
+        imageContainer.show();
+        imageContainer.children("img").attr("src", imageSrc);
+    });
+    $("body").on("mouseleave", ".nav-dropdown  ul.sub-menu li", function(){
+        var element = $(this);
+        var imageSrc= element.attr("data-image");
+        var imageContainer= element.parents(".nav-dropdown").find(".sub-dropdown-image-container");
+        imageContainer.hide();
+    });
 });
