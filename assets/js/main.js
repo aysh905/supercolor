@@ -31,13 +31,18 @@ $(function(){
     var subMenu, subMenuContent;
     $("body").on("mouseenter", ".nav-dropdown  ul.main-menu li", function(){
         var element = $(this);
-        var imageSrc= element.attr("data-image");
-        var imageContainer= element.parents(".nav-dropdown").find(".dropdown-image-container");
+        var imageSrc = element.attr("data-image");
+        var imageContainer = element.parents(".nav-dropdown").find(".dropdown-image-container");
         $(".nav-dropdown ul.main-menu li").removeClass("active");
         element.addClass("active");
         subMenu = element.parents(".nav-dropdown").children(".sub-dropdown");
         subMenuContent = element.children(".nav-sub-dropdown").length ? element.children(".nav-sub-dropdown").html() : false;
-        imageContainer.show();
+        if(imageSrc) {
+            imageContainer.show();
+            element.addClass("image-exists");
+        } else {
+            element.removeClass("image-exists");
+        }
         if(subMenuContent) {
             subMenu.html(subMenuContent);
             subMenu.show();
@@ -48,11 +53,12 @@ $(function(){
     });
     $("body").on("mouseleave", ".nav-dropdown  ul.main-menu li", function(){
         var element = $(this);
-        var imageSrc= element.attr("data-image");
-        var imageContainer= element.parents(".nav-dropdown").find(".dropdown-image-container");
+        var imageSrc = element.attr("data-image");
+        var imageContainer = element.parents(".nav-dropdown").find(".dropdown-image-container");
         var subMenu = element.parents(".nav-dropdown").children(".sub-dropdown");
         subMenuContent = false;
-        element.removeClass("active");
+        element.removeClass("active image-exists");
+        imageContainer.hide();
     });
 
     $("body").on("mouseenter", ".nav-dropdown ul.sub-menu li", function(){
@@ -61,7 +67,12 @@ $(function(){
         var imageContainer= element.parents(".nav-dropdown").find(".sub-dropdown-image-container");
         $(".nav-dropdown ul.sub-menu li").removeClass("active");
         element.addClass("active");
-        imageContainer.show();
+        if(imageSrc) {
+            imageContainer.show();
+            element.addClass("image-exists");
+        } else {
+            element.removeClass("image-exists");
+        }
         imageContainer.children("img").attr("src", imageSrc);
     });
     $("body").on("mouseleave", ".nav-dropdown  ul.sub-menu li", function(){
@@ -69,6 +80,6 @@ $(function(){
         var imageSrc= element.attr("data-image");
         var imageContainer= element.parents(".nav-dropdown").find(".sub-dropdown-image-container");
         imageContainer.hide();
-        element.removeClass("active");
+        element.removeClass("active image-exists");
     });
 });

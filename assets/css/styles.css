@@ -725,7 +725,7 @@ p.nomargin {
 .nav-dropdown ul li:hover a {
     color: #fff;
 }
-.dropdown-content ul.main-menu li.active::before {
+.dropdown-content ul.main-menu li.image-exists::before {
     display: block;
 }
 .nav-bar-item:hover .nav-dropdown {
@@ -795,7 +795,7 @@ ul.sub-menu li:after {
     margin-top: -15px;
     margin-left: -10px;
 }
-ul.sub-menu li.active::after {
+ul.sub-menu li.image-exists::after {
     display: block;
 }
 .sub-dropdown {
