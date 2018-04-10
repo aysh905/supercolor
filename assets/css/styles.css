@@ -799,7 +799,6 @@ ul.sub-menu li.image-exists::after {
     display: block;
 }
 .sub-dropdown {
-    display: none;
     position: absolute;
     left: 100%;
     top: 0;
