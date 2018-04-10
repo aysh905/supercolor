@@ -708,7 +708,6 @@ p.nomargin {
     cursor: pointer;
     padding: 5px 0;
     padding-left: 15px;
-    font-weight: 600;
     position: relative;
 }
 .nav-dropdown ul li .nav-dropdown-item {
@@ -970,4 +969,23 @@ h2 {
   font-size: 13px;
   padding: 5px;
 }
+}
+.demo {
+    width:450px;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }

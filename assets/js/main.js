@@ -75,4 +75,12 @@ $(function(){
         imageContainer.hide();
         element.removeClass("active image-exists");
     });
+	$('#lightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 4,
+	thumbMargin: 20
+	});
 });
