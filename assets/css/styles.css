@@ -1051,8 +1051,162 @@ h2 {
 .margin-20 {
   margin-bottom: 20px;
 }
+#accordion .mb-0 a {
+  color: #fff;
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100% !important;
+}
+.card-header {
+  background: #df3682 none repeat scroll 0 0;
+  border-radius:0px !important;
+}
+.card {
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+.card .fa.fa-angle-down {
+  float: right;
+  font-size: 31px;
+}
+.btn.btn-default.btn-number {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  color: #df3682;
+  font-size: 12px;
+  height: 38px;
+  opacity: 1;
+  width: 42px;
+}
+.form-control.input-number {
+  border: 0 none;
+  color: #df3682;
+  font-size: 48px;
+  font-weight: bold;
+  height: 39px;
+  margin: -3px 15px 0;
+  padding: 0;
+}
+.input-group.item-counter {
+  margin: 0 auto;
+  width: 145px;
+}
+.card-body.counter-card-body {
+  padding: 36px 19px;
+}
+.product-image-column {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 18px;
+  min-height: 135px;
+}
+.padding-twenty-five{
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.size-name {
+  display: table;
+  font-size: 21px;
+  font-weight: bold;
+}
+.material-details {
+  display: table;
+  font-size: 13px;
+}
+.coming-soon-col{
+  background:#FCDA19;
+}
+.coming-soon {
+  background: #fcda19 none repeat scroll 0 0;
+  color: #a68f12;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+}
+.product-image-column.coming-soon-border {
+  border: 3px solid #FCDA19;
+}
+.item-counter-sub {
+  margin: unset !important;
+  width: 108px !important;
+  margin-top: 10px !important;
+  float:left;
+}
+.item-counter-sub .btn.btn-default.btn-number {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  color: #df3682;
+  font-size: 9px;
+  height: 30px;
+  opacity: 1;
+  width: 35px;
+}
+.item-counter-sub .form-control.input-number {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  height: 30px;
+  margin: 0;
+  padding: 0 0 0 12px;
+}
+.input-group-btn.button-right-border button {
+  border-radius: 3px 0 0 3px;
+}
+.input-group-btn.button-left-border button {
+  border-radius: 1px 3px 3px 0;
+}
+.item-price {
+  color: #e51e7d;
+  float: left;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 16px;
+  padding-top: 9px;
+}
+.total-price {
+  color: #acafb3;
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.total-price-details {
+  color: #acafb3;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.total-price-details > span {
+  color: #df3682;
+  font-size: 33px;
+}
 @media screen and (min-width: 768px) {
 .not-desktop{
 	display:none;
+}
+}
+@media screen and (max-width: 768px) {
+.coming-soon {
+  position: initial;
+}
+.item-price {
+  float: none;
+  margin-left: 0;
+}
+.total-price {
+  font-size: 13px;
+}
+.total-price-details > span {
+  color: #df3682;
+  font-size: 22px;
 }
 }
